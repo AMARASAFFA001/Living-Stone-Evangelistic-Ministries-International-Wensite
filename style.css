@@ -1,0 +1,1089 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color:#222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+  box-shadow: #000000;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+
+body {
+  width: 100%;
+  background-color: #f1efef;
+}
+
+
+
+/*home page styling start here*/
+
+
+
+/* header star*/
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #030924;
+  border-bottom: 3px solid rgb(255, 0, 0);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#header img {
+  width: 80px;
+
+}
+
+#header h4 {
+  color: #ffffff;
+  font-size: 20px;
+  float: left;
+}
+
+#header span {
+ color: #ffa500;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400px;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#navbar ul{
+  display: none;
+  position: relative;
+}
+
+#navbar .cart-hover:hover{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #e3e6f3;
+    margin-top: 20px;
+    position: absolute;
+    line-height: 40px;
+   
+}
+
+
+/* mobile styling*/
+
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#close {
+  display: none;
+}
+
+
+
+
+/* Home page*/
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 80px;
+  background: rgb(36, 36, 99);
+  background-image: linear-gradient(
+      115deg,
+      rgba(0, 1, 82, 0.8),
+      rgba(136, 136, 206, 0.7)
+  ),
+    url(/img/about/bbbbbbb.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+}
+
+#hero h4 {
+  color: white;
+  padding-bottom: 15px;
+}
+
+#hero h1 {
+  color: #ffa500;
+  text-shadow: 0 10px 10px  rgba(0, 0, 0, 10);
+}
+
+#hero p {
+  color: #ffffff;
+ 
+}
+
+
+
+#hero button{
+  font-size: 14px;
+  font-weight: 600px;
+  padding: 15px 30px;
+  color: #ffffff;
+  background-color: #ff0000;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+}
+
+#hero button:hover{
+   color: #ff0000;
+   font-weight: bold;
+  background-color: #000131;
+}
+
+
+
+.pst-text button{
+  font-size: 14px;
+  font-weight: 600px;
+  padding: 15px 30px;
+  color: #ffffff;
+  background-color: #000131;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.pst-text button:hover{
+ 
+  color: #ffffff;
+  background-color: #c21d00;
+}
+
+
+
+
+/* this is my pastor section */
+
+#pst-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#pst-container .pst-img {
+  width: 50%;
+  
+
+}
+
+#pst-container .pst-img img {
+  width: 50%;
+}
+
+
+#pst-container .pst-text {
+ width: 50%;
+ text-align: justify;
+ 
+}
+
+#pst-container .pst-text h2 {
+  font-size: 30px;
+  text-align: center;
+  color: rgb(0, 0, 68);
+ }
+
+ #pst-container .pst-text h3 {
+  font-size: 16px;
+  font-style: italic;
+  color: #088178;
+ }
+
+
+
+
+/* video section */
+#video-card{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ gap: 50px;
+  
+}
+
+.video-1{
+  width: 500px;
+  height: 281px;
+}
+
+
+
+
+
+/* my tithe and offerings section */
+
+#tithetext{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(/img/banner/praying-1536x458.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+#tithetext h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffff;
+}
+
+
+#tithetext button {
+  border: none;
+  background-color: #da7b00;
+  font-weight: 700;
+  color: #ffff;
+  padding: 15px 40px;
+  transition: all 2s;
+  cursor: pointer;
+}
+
+#tithetext button:hover {
+  border: none;
+  color: #ffff;
+  background-color: #030d3a;
+ 
+}
+
+/* my footer section */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #030d3a;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+  color: #dd6300;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+  color: white;
+  line-height: 20px;
+}
+
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+footer .follow {
+  margin-top: 20px;
+  color: #dd6300;
+}
+
+footer .follow i {
+  color: #ffffff;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+/*footer styling start here*/
+
+footer .follow i:hover,
+footer a:hover {
+  color: #dd6300;
+}
+
+footer .copyright {
+  text-align: center;
+}
+
+
+
+#service_page-header,
+#about_page-header,
+#galary_page-header,
+#blog_page-header,
+#contact_page-header{
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*service page styling start here*/
+
+#service{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+
+.days{
+ width: 300px;
+ text-align: center;
+ border-right: 1px solid rgb(202, 202, 202);
+border-width: 3px;
+margin-bottom: 40px;
+}
+
+.days:last-child{
+ border-right: none;
+}
+
+.third{
+border-right: none;
+width: 300px;
+text-align: center;
+border-width: 3px;
+margin-bottom: 40px;
+ }
+
+ .third h2{
+  font-size: 20px;
+  color: #11005c;
+ }
+
+
+
+.days h2{
+ font-size: 20px;
+ color: #11005c;
+}
+
+
+
+#service_page-header {
+  background-image: url(img/banner/b1.jpg);
+}
+
+
+
+
+#service_page-header p {
+ color: white;
+}
+
+#service_page-header h2,
+#about_page-header h2,
+#about_page-header p,
+#shop_page-header p {
+  color: #ffffff;
+}
+
+
+#theme-page-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#theme-page-header h2{
+  font-size: 60px;
+  text-align: center;
+ color: #010057; 
+}
+
+#theme-page-header img{
+ width: 100%;
+ margin-top: 30px;
+}
+
+#theme-page-header, .test h2{
+  margin-top: 50px;
+ }
+
+
+
+
+
+ /*want to see you  styling start here*/
+ 
+ #wait-to-see-you .text{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+ }
+
+
+ #wait-to-see-you .text h3{
+  text-align: center;
+  color: #11005c;
+ }
+
+
+
+
+
+ /*special prayer meeting styling start here*/
+
+ #special-prayer{
+  display: flex;
+  align-items: center;
+  flex-direction: column  ;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #c9cbce;
+ }
+
+ .special-prayercont{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  justify-content: space-between;
+  
+ }
+
+.special-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 50px;
+ }
+
+ .special-container .specialpr-details {
+  text-align: left;
+ }
+
+ .special-container .specialpr-details h3 {
+  color:#08002e
+ }
+
+
+
+
+
+
+
+
+
+
+/*galary page styling start here*/
+
+
+#galary_page-header {
+  background-image: url(img/banner/b2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+ #church-galary{
+  display: flex;
+ align-items: center;
+ flex-wrap: wrap;
+  justify-content: space-between;
+ }
+
+ #church-galary .img-con img{ 
+width: 100px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+ /*about page styling start here*/
+
+.about-container{
+  display: flex;
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#about_page-header{
+  background-image: url(/img/banner/b2.jpg);
+  display: flex;
+  background-position: cover;
+  background-size: cover;
+}
+
+.about-image {
+  max-width: 100%;
+ width: 420px;
+ height: auto;
+}
+
+.about-image img{
+ max-width: 100%;
+ width: 420px;
+ height: auto;
+ transition: 0.5s ease;
+}
+
+
+.about-image img:hover{
+  transform: scale(1.2);
+ }
+
+.about-content{
+  width: 550px;
+  text-align: left;
+}
+
+.about-content h2{
+ font-size: 30px;
+ margin-bottom: 20px;
+ line-height: 1.5;
+ color: rgb(0, 0, 0);
+}
+
+.about-content p{
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+  text-align: justify;
+}
+ 
+
+button{
+  font-size: 16px;
+  border: none;
+  color: #ffffff;
+  background-color: #11005c;
+  padding: 10px 20px;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+button:hover{
+  background-color: #465b52;
+ transform: translate(2.22);
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+/*blog page styling start here*/
+
+.blog_page-header {
+  background-image: url("../img/banner/b19.png");
+}
+
+#blog {
+  padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+#blog .blog-img {
+  width: 50%;
+  margin-right: 40px;
+}
+
+#blog .blog-img {
+  width: 50%;
+  margin-right: 40px;
+}
+
+#blog img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#blog .blog-details {
+  width: 50%;
+}
+
+#blog .blog-details a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 11px;
+  font-weight: 700px;
+  position: relative;
+  transition: 0.3s;
+}
+
+#blog .blog-details a::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+
+#blog .blog-details a:hover {
+  color: #088178;
+}
+
+#blog .blog-details a:hover::after {
+  color: #088178;
+}
+
+#blog h1 {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700px;
+  color: #c9cbce;
+  z-index: -9;
+} */
+
+
+
+
+
+
+
+/*contact page styling start here*/
+
+
+
+
+#contact-details .map {
+  width: 100%;
+  height: 400px;
+}
+
+.map iframe{
+  width: 100%;
+
+}
+
+
+.details {
+  padding: 40px;
+  width: 40%;
+  margin: 40px;
+  align-items: center;
+  text-align: left;
+  background-color: rgb(250, 247, 247);
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+  
+}
+
+.details p {
+  font-size: 16px;
+  padding-bottom: 5px;
+  color: #000000;
+}
+
+.details h2 {
+  font-size: 26px;
+  color: #000000;
+  line-height: 35px;
+  padding: 20px 0;
+}
+
+
+.details span,
+#form-details form span{
+  font-size: 12px;
+  color: #000000;
+}
+
+.details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+
+ .details li i {
+  font-size: 14px;
+  padding: 22px;
+}
+
+.details li p {
+  font-size: 14px;
+  margin: 14px;
+}
+
+
+
+
+#form-details{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+ border: 1px solid #e1e1e1;
+}
+
+
+form{
+  width: 40%;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+#form-details form h2 {
+  font-size: 26px;
+  color: #000000;
+  line-height: 35px;
+  padding: 20px 0;
+}
+
+
+
+
+
+#form-details form{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+#form-details form input,
+#form-details form textarea{
+  width: 100%;
+  padding: 12px 15px;
+  outline: navajowhite;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+
+
+
+
+
+
+
+/* my media quarry section for ipad */
+
+@media (max-width: 799px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #dfe1eb;
+    box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #222;
+    font-size: 24px;
+  }
+
+  #la-bag {
+    display: none;
+  }
+
+  #hero {
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+
+  #hero h2 {
+    font-size: 40px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding: 20px;
+  }
+
+ 
+
+
+
+/*   footer page styling */
+
+  
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+}
+
+
+
+
+  @media (max-width: 477px) {
+    .section-p1 {
+      padding: 20px;
+    }
+    #header {
+      padding: 10px 8px;
+      position: fixed;
+      margin: 0 auto;
+    }
+
+    #header a {
+      font-size: 12px;
+    }
+
+
+
+
+    h1 {
+      font-size: 16px;
+    }
+
+    #hero h2 {
+      font-size: 30px;
+    }
+
+    #hero h4 {
+      margin-top: auto;
+      font-size: 16px;
+    }
+
+
+    #hero {
+      padding: 0 20px;
+      background-position: center;
+    }
+
+    #pst-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  #pst-container .pst-img img {
+    width: 100%;
+}
+
+#pst-container .pst-text {
+  width: 100%;
+  text-align: justify;
+  align-items: center;
+  
+ }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
